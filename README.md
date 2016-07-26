@@ -10,4 +10,4 @@ This project is inspired in
 
 ## Usage
 
-    nvd-mirror.sh /output/directory
+    nvd-mirror.sh <output_directory>
