@@ -37,7 +37,7 @@ const (
 func main() {
 	args := os.Args
 	if len(args) < 2 {
-		fmt.Println("Usage %s <outputDir>", args[0]);
+		fmt.Printf("Usage: %s <outputDir>\n", args[0]);
 		os.Exit(-2);
 	}
 	outDir := args[1]
