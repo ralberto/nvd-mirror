@@ -12,10 +12,6 @@ wget or gzip (used in the bash script), you can build the golang client.
 
     nvd-mirror.sh <output_directory>
     
-# Build utility in golang
-	go get github.com/ralberto/nvd-mirror
-    go build
-    
     
 # Similar projects
 - [nist-data-mirror](https://github.com/stevespringett/nist-data-mirror) - Utility in Java
