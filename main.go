@@ -24,6 +24,7 @@ import (
 	"strconv"
 	"io"
 	"compress/gzip"
+	"time"
 )
 
 const (
@@ -54,7 +55,9 @@ func main() {
 		os.Exit(-1)
 	}
 
-	for year := START_YEAR; year < 2016; year++ {
+	currentYear,_,_ := time.Now().Date()
+
+	for year := START_YEAR; year <= currentYear; year++ {
 		err = Get(strings.Replace(CVE_12_BASE_URL, "%d", strconv.Itoa(year), 1), outDir)
 		if (err != nil) {
 			fmt.Printf("%s\n", err.Error())
